@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background">
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textSize="30dp"
+        android:textColor="@color/dark"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="-10dp"
+         />
+    <TextView
+        android:id="@+id/tv_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign up"
+        android:textColor="@color/dark"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="20dp"
+        android:textSize="50dp"
+        android:layout_below="@id/tv_welcome"
+        android:layout_alignStart="@id/tv_welcome"
+        android:layout_alignLeft="@id/tv_welcome"
+        />
+    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+        android:id="@+id/emial"
+        android:layout_below="@+id/tv_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:neomorph_view_type="rectangular"
+        app:neomorph_shadow_type="inner"
+        app:neomorph_elevation="8dp"
+        app:neomorph_corner_radius="16dp"
+        app:neomorph_background_color="@color/background"
+        app:neomorph_shadow_color="@color/shadow_color"
+        app:neomorph_highlight_color="@color/highlight"
+        tools:ignore="MissingClass">
+
+        <EditText
+            android:id="@+id/email_edit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_rectangle"
+            android:hint=" Email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            />
+
+    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+        android:id="@+id/password"
+        android:layout_below="@+id/emial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:neomorph_view_type="rectangular"
+        app:neomorph_shadow_type="inner"
+        app:neomorph_elevation="8dp"
+        app:neomorph_corner_radius="16dp"
+        app:neomorph_background_color="@color/background"
+        app:neomorph_shadow_color="@color/shadow_color"
+        app:neomorph_highlight_color="@color/highlight"
+        tools:ignore="MissingClass">
+
+        <EditText
+            android:id="@+id/password_edit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_rectangle"
+            android:hint=" Password"
+            android:inputType="textEmailAddress"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            />
+    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+        android:id="@+id/Forgot_password"
+        android:layout_below="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:neomorph_view_type="rectangular"
+        app:neomorph_shadow_type="inner"
+        app:neomorph_elevation="8dp"
+        app:neomorph_corner_radius="16dp"
+        app:neomorph_background_color="@color/background"
+        app:neomorph_shadow_color="@color/shadow_color"
+        app:neomorph_highlight_color="@color/highlight"
+        tools:ignore="MissingClass">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot pass?"
+            android:textColor="@color/dark"
+            android:layout_marginLeft="270dp"/>
+
+    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+    <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+        android:id="@+id/login_btn"
+        android:layout_below="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:neomorph_view_type="rectangular"
+        app:neomorph_shadow_type="inner"
+        app:neomorph_elevation="8dp"
+        app:neomorph_corner_radius="16dp"
+        app:neomorph_background_color="@color/background"
+        app:neomorph_shadow_color="@color/shadow_color"
+        app:neomorph_highlight_color="@color/highlight"
+        tools:ignore="MissingClass"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_button"
+            android:text="Login"
+            android:textColor="@color/highlight"
+            />
+    </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+</RelativeLayout>
